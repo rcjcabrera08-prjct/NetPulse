@@ -1,0 +1,36 @@
+{
+  "targets": [
+    "google.com",
+    "1.1.1.1",
+    "8.8.8.8"
+  ],
+  "count": 5,
+  "timeout_ms": 1000,
+  "interval_s": 1.0,
+  "payload_bytes": 32,
+  "engine": "auto",
+  "thresholds": {
+    "latency_ms": 150.0,
+    "loss_pct": 5.0,
+    "jitter_ms": 30.0
+  },
+  "tcp_check": {
+    "enabled": true,
+    "port": 443,
+    "timeout_s": 3.0
+  },
+  "wifi": {
+    "enabled": true,
+    "rssi_warn_dbm": -75
+  },
+  "monitor": {
+    "duration_s": 30,
+    "interval_s": 2.0
+  },
+  "report_dir": "results",
+  "ui": {
+    "host": "127.0.0.1",
+    "port": 5000,
+    "open_browser": true
+  }
+}

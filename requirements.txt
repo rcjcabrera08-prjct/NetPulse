@@ -1,0 +1,5 @@
+# Web dashboard
+Flask>=3.0
+
+# Optional raw-ICMP engine (requires Npcap and an elevated terminal on Windows):
+# scapy>=2.6
